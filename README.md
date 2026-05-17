@@ -1,5 +1,7 @@
 # runnb
 
+[![CI](https://github.com/thwit/runnb/actions/workflows/ci.yml/badge.svg)](https://github.com/thwit/runnb/actions/workflows/ci.yml)
+
 Run a Jupyter notebook into your script's namespace — with full IPython magic support.
 
 ## Install
