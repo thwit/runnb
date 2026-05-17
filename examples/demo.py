@@ -5,9 +5,9 @@ Run from the repo root:
     python examples/demo.py
 """
 
-import runnb
+import runipynb
 
-runnb.run_notebook("tests/fixtures/with_magics.ipynb")
+runipynb.run_notebook("tests/fixtures/with_magics.ipynb")
 
 print("###")
 print(helper_var)   # noqa: F821  — defined inside the notebook

@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "runnb"
+name = "runipynb"
 dynamic = ["version"]
 description = "Run a Jupyter notebook into your script's namespace with full IPython magic support"
 readme = "README.md"
@@ -29,16 +29,16 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://github.com/thwit/runnb"
+Repository = "https://github.com/thwit/runipynb"
 
 [project.optional-dependencies]
 test = ["pytest>=7"]
 
 [tool.hatch.version]
-path = "src/runnb/__init__.py"
+path = "src/runipynb/__init__.py"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/runnb"]
+packages = ["src/runipynb"]
 
 [tool.hatch.build.targets.sdist]
 exclude = [".claude/"]
