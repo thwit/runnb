@@ -28,6 +28,8 @@ def run_notebook(path, ns=None, *, raise_on_error=True, chdir=True):
     shell = InteractiveShell.instance(user_ns=ns)
     shell.user_ns = ns
 
+    # chdir to the notebook's directory so relative paths inside cells
+    # (e.g. pd.read_csv("data.csv")) resolve the same way they would in Jupyter.
     cm = _chdir(nb_path.parent) if chdir else nullcontext()
     with cm:
         for cell in nb.cells:
